@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital@0;1&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --color-pink:  #F583A7;
-    --color-icons:  #364BA7;
+    --color-pink: #f583a7;
+    --color-icons: #364ba7;
     font-family: 'Spectral', serif;
 }
 
-  .container {
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
     flex-shrink: 0;
-    background: url(image/Screenshot\ 2021-09-03\ at\ 10.46\ 1.png), lightgray 50% / cover no-repeat;
+    background: url(image/Screenshot\ 2021-09-03\ at\ 10.46\ 1.png),
+        lightgray 50% / cover no-repeat;
 }
 
 .container--nested {
@@ -27,22 +33,26 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 500px;
-    height: 300px;
+    max-width: 1000px;
     margin: 10px;
     border-radius: 10px;
-    background: rgba(223, 219, 229, 0.50);
+    background: rgba(223, 219, 229, 0.5);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px;
 }
 
 #png {
-    width: 100px; 
+    width: 160px;
     height: auto;
-    margin-top: 0px;
 }
 
 .container--nested__blue-quote {
-    color: var(--color-icons)
+    color: var(--color-icons);
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 700;
+    margin: 24px 0;
 }
 
 #line {
@@ -51,22 +61,29 @@
 }
 
 .container--nested__pink-autor {
-    color: var(--color-pink)
+    color: var(--color-pink);
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    margin: 24px 0;
 }
 
 .container--nested__pink-autor,
 .container--nested__blue-quote {
-text-align: center;
-font-family: Roboto;
-font-size: 30px;
-font-style: italic;
-font-weight: 600;
-line-height: normal;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.container--nested__footer { 
+.container--nested__footer {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .btn {
@@ -75,7 +92,7 @@ line-height: normal;
     background-color: var(--color-icons);
     border: none;
     color: var(--color-pink);
-    font-size: 20px;
-    text-align: center;
-    font-family: Roboto;
+    font-size: 2.25rem;
+    padding: 20px 26px;
+    font-weight: 700;
 }
